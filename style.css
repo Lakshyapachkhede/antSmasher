@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: url('images/wood.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+#game{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+#scoreboard, #lives{
+    position: absolute;
+    top: 10px;
+    color: white;
+    font-size: 24px;
+    z-index: 10;
+}
+#lives{
+    right: 10px;
+}
+#scoreboard{
+    left: 10px;
+}
+.ant{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url('images/ant.png') no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+    z-index: 10;
+
+
+}
+
+.smashed{
+    background: url('images/green.png') no-repeat center center;
+    background-size: contain;
+    
+}
