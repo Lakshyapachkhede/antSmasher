@@ -33,6 +33,7 @@ function createAnt(){
 
 
     ant.addEventListener('click', function(){
+        if (!ant.classList.contains('smashed')){
         clearInterval(antMovement);
         ant.classList.add('smashed');
         score += 10;
@@ -41,7 +42,7 @@ function createAnt(){
         setTimeout(() => {
             ant.remove();
         }, 2000);
-
+    }
     });
 
 
