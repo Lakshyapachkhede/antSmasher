@@ -46,5 +46,10 @@ body{
 .smashed{
     background: url('images/green.png') no-repeat center center;
     background-size: contain;
+    opacity: 1;
+    transition: opacity 1s ease-out;
     
+}
+.fade-out {
+    opacity: 0;
 }
