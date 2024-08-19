@@ -40,6 +40,9 @@ function createAnt(){
         document.getElementById('score').innerText = score;
         smashSound.play();
         setTimeout(() => {
+        ant.classList.add('fade-out');
+        }, 300);
+        setTimeout(() => {
             ant.remove();
         }, 2000);
     }
