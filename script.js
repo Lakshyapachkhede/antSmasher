@@ -13,7 +13,7 @@ function createAnt() {
     document.getElementById('game').appendChild(ant);
 
     let direction = 'left';
-    const horizontalSpeed = 1 + Math.random();
+    const horizontalSpeed = 4;
     const verticalSpeed = 3;
 
 
