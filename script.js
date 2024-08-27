@@ -12,27 +12,13 @@ function createAnt() {
     ant.style.top = '0px';
     document.getElementById('game').appendChild(ant);
 
-    let direction = 'left';
-    const horizontalSpeed = 4;
     const verticalSpeed = 3;
 
 
     const antMovement = setInterval(() => {
         let currentTop = parseInt(ant.style.top);
-        let currentLeft = parseInt(ant.style.left);
 
 
-        if (direction === 'left') {
-            ant.style.left = (currentLeft - horizontalSpeed) + "px";
-            if (currentLeft <= 0) {
-                direction = "right";
-            }
-        } else {
-            ant.style.left = (currentLeft + horizontalSpeed) + "px";
-            if (currentLeft >= window.innerWidth - ant.offsetWidth) {
-                direction = 'left';
-            }
-        }
 
         ant.style.top = (currentTop + verticalSpeed) + "px";
 
